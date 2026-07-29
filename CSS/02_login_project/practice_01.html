@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+  </head>
+  <style>
+    body {
+      font: Arial, Helvetica, sans-serif;
+      background: -webkit-radial-gradient(rgb(5, 12, 14), rgb(13, 255, 0));
+      margin: 0;
+      padding: 0;
+      height: 300vh; /* To enable scrolling */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      width: 250px;
+      background-color: rgb(0, 255, 0);
+      border-radius: 8px;
+      padding: 10px;
+    }
+    h2 {
+      color: black;
+      text-align: center;
+      font: bold;
+      font-size: 33px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    .email {
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .namebox {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0px;
+    }
+    .fname {
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 96px;
+      display: flex;
+    }
+
+    .password {
+      margin: auto;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 140px;
+    }
+    button {
+      border-radius: 8px;
+      width: 120px;
+      padding: 3px;
+      background-color: rgb(165, 235, 51);
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      margin: auto;
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <div class="card">
+      <h2>Sign Up</h2>
+      <form>
+        <input class="email" type="Email" placeholder="Email" />
+        <div class="namebox">
+          <input class="fname" type="text" placeholder="First name" />
+          <input class="fname" type="text" placeholder="Last name" />
+        </div>
+        <input class="password" type="password" placeholder="Password" />
+        <button type="submit">Sign up</button>
+      </form>
+    </div>
+  </body>
+</html>

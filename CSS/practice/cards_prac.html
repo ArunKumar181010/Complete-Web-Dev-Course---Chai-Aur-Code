@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping</title>
+    <style>
+      body,
+      .container {
+        background-color: #202020;
+      }
+      .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+
+        align-items: center;
+        justify-items: center;
+      }
+      .card1,
+      .card2,
+      .card3,
+      .card4 {
+        width: 250px;
+        height: 420px;
+        background-color: rgb(64, 64, 64);
+        border: 2px solid #ffffff;
+        border-radius: 8px;
+      }
+      .img {
+        width: 100%;
+      }
+      .product-title {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+        font-size: 20px;
+      }
+      .button {
+        border: none;
+        display: flex;
+        border-radius: 5px;
+        margin-top: 40px;
+        justify-content: space-around;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card1">
+        <img
+          class="img"
+          src="https://yt3.googleusercontent.com/zrkw0v79w7uJtNhdw_kXd02bb20JOz5f8E11cN-GLzqpqNOaQPvWiekI_kFDL0YZvfEl34wxmYM=s160-c-k-c0x00ffffff-no-rj"
+        />
+        <h4 class="product-title">Product 1</h4>
+        <div class="button">
+          <button>Buy Now</button>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card2">
+        <img
+          class="img"
+          src="https://yt3.googleusercontent.com/zrkw0v79w7uJtNhdw_kXd02bb20JOz5f8E11cN-GLzqpqNOaQPvWiekI_kFDL0YZvfEl34wxmYM=s160-c-k-c0x00ffffff-no-rj"
+        />
+        <h4 class="product-title">Product 2</h4>
+        <div class="button">
+          <button>Buy Now</button>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card3">
+        <img
+          class="img"
+          src="https://yt3.googleusercontent.com/zrkw0v79w7uJtNhdw_kXd02bb20JOz5f8E11cN-GLzqpqNOaQPvWiekI_kFDL0YZvfEl34wxmYM=s160-c-k-c0x00ffffff-no-rj"
+        />
+        <h4 class="product-title">Product 3</h4>
+        <div class="button">
+          <button>Buy Now</button>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="card4">
+        <img
+          class="img"
+          src="https://yt3.googleusercontent.com/zrkw0v79w7uJtNhdw_kXd02bb20JOz5f8E11cN-GLzqpqNOaQPvWiekI_kFDL0YZvfEl34wxmYM=s160-c-k-c0x00ffffff-no-rj "
+        />
+        <h4 class="product-title">Product 4</h4>
+        <div class="button">
+          <button>Buy Now</button>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
