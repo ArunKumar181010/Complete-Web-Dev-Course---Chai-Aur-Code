@@ -1,0 +1,24 @@
+{
+  "name": "project_management",
+  "version": "1.0.0",
+  "description": "a project management application for me(begineer)",
+  "keywords": [
+    "Udemy",
+    "course",
+    "backend",
+    "API",
+    "creation"
+  ],
+  "license": "ISC",
+  "author": "Arun Kumar",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "prettier": "3.9.6"
+  }
+}
