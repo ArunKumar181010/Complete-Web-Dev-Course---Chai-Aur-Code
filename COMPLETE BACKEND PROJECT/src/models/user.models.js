@@ -1,5 +1,5 @@
 import mongoose, { Schema } from "mongoose";
-
+import brcypt from "bcrypt";
 const userSchema = new Schema(
   {
     avatar: {
@@ -59,5 +59,15 @@ const userSchema = new Schema(
     timestamps: true,
   },
 );
+
+userSchema.pre("save", async function (next) {
+  if (!this.isModified("password")) return next();
+  this.password = await brcypt.hash(this.password, 10);
+  next();
+});
+
+userSchema.methods.isPasswordCorrect = async function (password) {
+  return await brcypt.compare(password, this.password); // check password is right
+};
 
 export const User = mongoose.model("User", userSchema);
