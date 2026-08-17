@@ -5,14 +5,14 @@ import nodemailer from "nodemailer";
 const sendEmail = async (options) => {
   const mailGenerator = new Mailgen({
     theme: "default",
-    products: {
+    product: {
       name: "Task Manager",
       link: "https://taskmanagelink.com",
     },
   });
 
-  const emailTextual = mailGenerator.generatePlaintext(options.MailgenContent);
-  const emailHtml = mailGenerator.generate(options.MailgenContent);
+  const emailTextual = mailGenerator.generatePlaintext(options.mailgenContent);
+  const emailHtml = mailGenerator.generate(options.mailgenContent);
 
   const transporter = nodemailer.createTransport({
     host: process.env.MAILTRAP_SMTP_HOST,
